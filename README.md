@@ -22,3 +22,12 @@ jquery对象级别插件开发
   
   
  （3）代码编写
+
+类级别插件开发
+;(function($) {
+    $.extend({
+        "yourPluginName":function(pram_value) {
+        //插件实现代码
+        }
+    });
+}) (jQuery);
