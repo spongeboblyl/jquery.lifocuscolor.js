@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>编写一个对象级别的插件</title>
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="jquery.lifocuscolor.js"></script>
+	<style type="text/css">
+        body{font-size: 13px}
+        .divFrame{border:1px solid #666;width: 140px}
+        .divTitle{padding:10px 10px 0px 10px; width: 120px; height: 30px; background-color: #eee; text-align: center;}
+        li{list-style: none;}
+        span{padding: 5px;}
+	</style>
+	<script >
+        $(function() {
+        	console.log($("#ul").focusColor("red"));
+
+        })
+	</script>
+</head>
+<body>
+	<div class="divFrame">
+        <div class="divTitle">
+            对象插件
+        </div>
+        <div class="divContent">
+            <ul id="ul">
+                <li><span>张三</span><span>男</span></li>
+                <li><span>李四</span><span>女</span></li>
+                <li><span>王五</span><span>男</span></li>
+            </ul>
+        </div>
+	</div>
+</body>
+</html>
